@@ -110,5 +110,9 @@ Notes:
     },[count]);
     ```
 12. This is how we can import the useState and useEffect in react: `import { useEffect, useState } from 'react';`
-13. 
+13. For Material UI import using this `import {Typography} from '@mui/material'` to write **h1** and other elements
+14. To add style to react components we can use either `style` or `sx` attribute to add style to the component like this:
+    ```
+    <Typography sx={{ fontSize: 14 }} gutterBottom></Typography>
+    ```
 
