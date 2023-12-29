@@ -28,8 +28,10 @@ const router = createBrowserRouter(
 
 //creating the application
 const App = () => {
+    document.title = 'Netflix';
     return (
         //initialising the router here
+        
         <RouterProvider router={router} />
     );
 };
