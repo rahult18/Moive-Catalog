@@ -1,10 +1,16 @@
-import React from 'react';
 import { Typography, Card, CardActionArea, CardContent, CardMedia, Container} from '@mui/material'
+import { useNavigate } from 'react-router-dom';
 
 const MovieListing = ({movie}) => {
+    const navigate = useNavigate();
     return (
         <Card sx={{ maxWidth: '250px', height:'300px', display: 'flex', flexDirection: 'column' }}>
-            <CardActionArea style={{ flex: '1' }}>
+            <CardActionArea 
+                style={{ flex: '1' }}
+                onClick={() => 
+                    navigate(`/about/${movie.imdbID}`)
+                }
+            >
                 <CardMedia
                     component="img"
                     height="150"
@@ -21,7 +27,6 @@ const MovieListing = ({movie}) => {
                 <Container className="movieCard" sx={{
                         display: 'flex',
                         justifyContent: 'space-between',
-                        // paddingLeft:0,
                     }}
                 >
                     <Typography variant="body2" sx={{ marginRight:'6px', textTransform:'capitalize' }} color="text.secondary">
