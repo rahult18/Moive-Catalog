@@ -1,17 +1,13 @@
-In the project directory, you can run:
-
-### `npm start`
+Command to run the application:
+#### `npm start`
 
 Runs the app in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-Notes:
-1. In the public folder you will find the html that shows the homepage of react
-2. In the src folder there is code for JS files where the app is built on. The `App.js` file will have the JSX code for the application. 
-3. JSX and HTML look the same but they have their own differences. The main difference is that JSX will have `className` as an argument in the element tag
+#### Key Notes:
+1. In the public folder you will find the HTML that shows the homepage of react
+2. The src folder has code for JS files where the app is built. The `App.js` file will have the JSX code for the application. 
+3. JSX and HTML look the same but they have their differences. The main difference is that JSX will have `className` as an argument in the element tag
 4. For code and other dynamic expressions we enclose it in `{}` in JSX, where we can JS code in those brackets
 5. If we want to render two elements next to each other then we need to wrap them in a react fragment like this:
     ```
@@ -20,8 +16,8 @@ Notes:
         <h2> bye </h2>
     </>
     ```
-6. There are two types of components in React, they are: Functional Component & Class-Based compoents. We mostly use the functional components.
-7. This is how we create a component in React, this is called as Functional-component:
+6. There are two types of components in React, they are Functional Components and class-based components. We mostly use the functional components.
+7. This is how we create a component in React, this is called a Functional-component:
     ```
     const Person = () => {
         return (
@@ -67,8 +63,8 @@ Notes:
         )
     }
     ```
-9. Hooks helps us to extend React features without writing classes. Anything that starts with `use` and it is a function is a called as a **hook** in React. 
-10. **useState:**  It is a hook that lets you add React state to function components. This is how we can initialise it:
+9. Hooks helps us to extend React features without writing classes. Anything that starts with `use` and it is a function is called as a **hook** in React. 
+10. **useState:**  It is a hook that lets you add a React state to function components. This is how we can initialize it:
     ```
     const [count, setCount] = useState(0);
     - the first arg holds the value of the state
